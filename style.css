@@ -4,3 +4,41 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
+h1 {
+    font-size: 92px;
+    font-family: "playfair display", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#lastName {
+    font-size: 84px;
+    font-family: playfair-display, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-indent: 175px;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+}
+
+#lastName, h1 {
+    height: 100px;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%,200%);
+}
+
+a {
+    position: absolute;
+    float: left;
+    text-align: center;
+    left: 10%;
+    top: 10%;
+}
