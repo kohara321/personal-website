@@ -1,8 +1,10 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body {
-    background: linear-gradient(240deg, #7e82bd 60%, #78a6de 60%); 
+    background: -webkit-linear-gradient(220deg, #7e82bd 62%, #78a6de 62%); 
     font-family: lato, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -25,8 +27,6 @@ h1 {
     font-weight: 400;
     font-style: italic;
     text-indent: 175px;
-    margin: 0;
-    padding: 0px;
     text-align: center;
 }
 
@@ -34,7 +34,6 @@ h1 {
     height: 100px;
     width: 400px;
     position: relative;
-    margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-60%,200%);
@@ -50,7 +49,6 @@ h1 {
 }
 a {
     position: absolute;
-    float: left;
     text-align: center;
     left: 10%;
     top: 10%;
@@ -60,20 +58,18 @@ a {
     max-width: 350px;
     max-height: 350px;
     position: relative;
-    margin: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-190%,-50%);
+    transform: translate(-270%, 20%);
 }
 
 #wolf {
     max-width: 325px;
     max-height: 325px;
     position: relative;
-    margin: 0;
     top: 50%;
     left: 50%;
-    transform: translate(80%,-30%);
+    transform: translate(80%,-40%);
 }
 
 /* img:hover {
