@@ -1,8 +1,12 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    background: #7e82bd; 
+    background: linear-gradient(240deg, #7e82bd 60%, #78a6de 60%); 
     font-family: lato, sans-serif;
     font-weight: 500;
     font-style: normal;
+    margin: auto;
 }
 
 h1 {
@@ -28,13 +32,22 @@ h1 {
 
 #lastName, h1 {
     height: 100px;
+    width: 400px;
     position: relative;
     margin: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-55%,200%);
+    transform: translate(-60%,200%);
+    cursor: pointer;
 }
 
+#lastName:hover, h1:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 80px #fff;
+}
 a {
     position: absolute;
     float: left;
@@ -42,3 +55,27 @@ a {
     left: 10%;
     top: 10%;
 }
+
+#chinchilla {
+    max-width: 350px;
+    max-height: 350px;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-190%,-50%);
+}
+
+#wolf {
+    max-width: 325px;
+    max-height: 325px;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(80%,-30%);
+}
+
+/* img:hover {
+    background: #fff;
+} */
