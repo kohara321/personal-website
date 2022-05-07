@@ -51,7 +51,7 @@ a {
     position: absolute;
     text-align: center;
     left: 10%;
-    top: 10%;
+    top: 8%;
 }
 
 #chinchilla {
@@ -75,3 +75,24 @@ a {
 /* img:hover {
     background: #fff;
 } */
+
+p.aboutSection {
+    width: 40%;
+    text-align: center;
+    padding: 1em;
+    font-size: 17px;
+}
+
+.aboutSection {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%,125%);
+}
+
+h2{
+    position: absolute;
+    top: 80px;
+    right: 330px;
+    font-size: 36px;
+}
