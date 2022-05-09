@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    background: -webkit-linear-gradient(220deg, #7e82bd 62%, #78a6de 62%); 
+    background: -webkit-linear-gradient(220deg, /*#7e82bd*/ #0c0c52 62%, #78a6de 62%); 
+    background-size: cover;
     font-family: lato, sans-serif;
     font-weight: 500;
     font-style: normal;
     margin: auto;
+    overflow: hidden;
 }
 
 h1 {
@@ -34,10 +36,10 @@ h1 {
     height: 100px;
     width: 400px;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-60%,200%);
+    top: 200px;
+    left: 500px;
     cursor: pointer;
+    color: #9e9e9b;
 }
 
 #lastName:hover, h1:hover {
@@ -55,26 +57,53 @@ a {
 }
 
 #chinchilla {
-    max-width: 350px;
-    max-height: 350px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-270%, 20%);
+    max-width: 375px;
+    max-height: 375px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    animation-name: out;
+    animation-duration: 1.5s;
+    animation-direction: reverse;
+    animation-timing-function: linear;
 }
 
 #wolf {
     max-width: 325px;
     max-height: 325px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(80%,-40%);
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    animation-name: out;
+    animation-duration: 1.5s;
+}
+#wolf:hover {
+    animation: rotation 1s linear;
+    animation-fill-mode: forwards;
 }
 
-/* img:hover {
-    background: #fff;
-} */
+#chinchilla:hover {
+    animation: rotation 1s reverse linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(0.1deg);
+    }
+  }
+
+@keyframes out {
+    from {
+      transform: rotate(1deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 p.aboutSection {
     width: 40%;
@@ -95,4 +124,22 @@ h2{
     top: 80px;
     right: 330px;
     font-size: 36px;
+}
+
+#me {
+    position: absolute;
+    max-width: 450px;
+    max-height: 450px;
+    top: 175px;
+    left: 125px;
+    animation: grow 1.5s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes grow {
+    to{
+    transform: scale(1.2);
+    }
 }
