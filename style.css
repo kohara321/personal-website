@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background: -webkit-linear-gradient(220deg, /*#7e82bd*/ #0c0c52 62%, #78a6de 62%); 
+    background: -webkit-linear-gradient(215deg, /*#7e82bd*/ #0c0c52 62%, #78a6de 62%); 
     background-size: cover;
     font-family: lato, sans-serif;
     font-weight: 500;
@@ -25,7 +25,7 @@ h1 {
 
 #lastName {
     font-size: 84px;
-    font-family: playfair-display, serif;
+    font-family: "playfair-display", serif;
     font-weight: 400;
     font-style: italic;
     text-indent: 175px;
@@ -40,6 +40,9 @@ h1 {
     left: 500px;
     cursor: pointer;
     color: #9e9e9b;
+    animation: grow 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 #lastName:hover, h1:hover {
@@ -49,6 +52,18 @@ h1 {
                  0 0 40px #fff,
                  0 0 80px #fff;
 }
+
+h3 {
+    position: absolute;
+    font-size: 22px;
+    font-family: "playfair display", serif;
+    font-weight: 400;
+    font-style: italic;
+    top: 185px;
+    left: 635px;
+    color: #0c0c52;
+}
+
 a {
     position: absolute;
     text-align: center;
@@ -57,8 +72,8 @@ a {
 }
 
 #chinchilla {
-    max-width: 375px;
-    max-height: 375px;
+    max-width: 350px;
+    max-height: 350px;
     position: absolute;
     top: 250px;
     left: 100px;
@@ -66,6 +81,7 @@ a {
     animation-duration: 1.5s;
     animation-direction: reverse;
     animation-timing-function: linear;
+    animation-delay: 0.5s;
 }
 
 #wolf {
@@ -76,6 +92,7 @@ a {
     right: 100px;
     animation-name: out;
     animation-duration: 1.5s;
+    animation-delay: 0.5s;
 }
 #wolf:hover {
     animation: rotation 1s linear;
@@ -122,7 +139,7 @@ p.aboutSection {
 h2{
     position: absolute;
     top: 80px;
-    right: 330px;
+    right: 280px;
     font-size: 36px;
 }
 

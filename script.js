@@ -12,12 +12,12 @@ lastName.addEventListener('mouseover', colorChange);
 function mouseOut () {
     lastName.style.color = '#9e9e9b';
     firstName.style.color = '#9e9e9b';
+    h3.style.color = '#9e9e9b';
 }
 
 lastName.addEventListener('mouseout', mouseOut);
 firstName.addEventListener('mouseout', mouseOut);
 
-function spin() {
-    const wolf = document.getElementById('wolf');
-    wolf.addEventListener('click', spin);
-};
+const h3 = document.createElement('h3');
+h3.textContent = "Hey, I'm";
+document.querySelector("body").appendChild(h3);
